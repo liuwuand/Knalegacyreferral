@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KNA Legacy & Co. Financial LLC | Official $100 Referral Program</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            obsidian: '#070B19',
+            charcoal: '#0D1429',
+            slateDark: '#131D3A',
+            gold: {
+              400: '#FACC15',
+              500: '#D4AF37',
+              600: '#B48E22',
+            },
+            emerald: {
+              400: '#34D399',
+              500: '#10B981',
+              600: '#059669',
+            }
+          },
+          animation: {
+            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'float': 'float 6s ease-in-out infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-6px)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #070B19;
+      color: #F8FAFC;
+      overflow-x: hidden;
+    }
+
+    /* Custom Range Slider Styling */
+    input[type="range"] {
+      -webkit-appearance: none;
+      appearance: none;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    input[type="range"]::-webkit-slider-runnable-track {
+      height: 10px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #D4AF37 0%, #10B981 100%);
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      margin-top: -7px;
+      background-color: #FFFFFF;
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      border: 3px solid #D4AF37;
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.7);
+      transition: transform 0.15s ease;
+    }
+
+    input[type="range"]::-webkit-slider-thumb:hover {
+      transform: scale(1.15);
+    }
+
+    input[type="range"]::-moz-range-track {
+      height: 10px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #D4AF37 0%, #10B981 100%);
+    }
+
+    input[type="range"]::-moz-range-thumb {
+      background-color: #FFFFFF;
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      border: 3px solid #D4AF37;
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.7);
+    }
+
+    /* Midnight Navy Glassmorphism card effects */
+    .glass-card {
+      background: rgba(13, 20, 41, 0.82);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(212, 175, 55, 0.16);
+    }
+
+    .gold-glow {
+      box-shadow: 0 0 45px -8px rgba(212, 175, 55, 0.35);
+    }
+
+    .emerald-glow {
+      box-shadow: 0 0 35px -8px rgba(16, 185, 129, 0.35);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-gold-500 selection:text-obsidian">
+
+  <!-- Ambient Royal Navy & Gold Background Glows -->
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <div class="absolute -top-40 -left-40 w-[28rem] h-[28rem] bg-blue-600/15 rounded-full blur-3xl animate-pulse-slow"></div>
+    <div class="absolute top-1/4 -right-40 w-[30rem] h-[30rem] bg-gold-500/12 rounded-full blur-3xl animate-pulse-slow" style="animation-delay: 2s;"></div>
+    <div class="absolute bottom-0 left-1/3 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl"></div>
+  </div>
+
+  <!-- Navigation Header -->
+  <header class="sticky top-0 z-40 glass-card border-b border-gold-500/20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+             <div class="relative w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-br from-gold-400 via-gold-500 to-amber-700 p-[2px] shadow-lg shrink-0 transition-transform group-hover:scale-105">
+          <div class="w-full h-full rounded-[14px] bg-white overflow-hidden flex items-center justify-center">
+            <img 
+              src="knalogo.jpg" 
+              <img src="knalogo.jpg" alt="KNA Legacy & Co. Official Logo" class="kna-official logo w-full h-full object-contain p-0.5 block" 
+              
+            />
+          </div>
+        </div>
+
+        <div class="block">
+          <span class="font-display font-extrabold text-lg sm:text-xl tracking-tight text-white">KNA <span class="text-gold-500">LEGACY & CO.</span></span>
+          <span class="block text-[10px] uppercase tracking-[0.18em] text-zinc-300 -mt-0.5">Financial LLC • Tax | Credit</span>
+        </div>
+      </a>
+
+      <!-- Nav Links (Desktop) -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-300">
+        <a href="#how-it-works" class="hover:text-gold-400 transition-colors">How It Works</a>
+        <a href="#calculator" class="hover:text-gold-400 transition-colors">Earnings Calculator</a>
+        <a href="#faq" class="hover:text-gold-400 transition-colors">FAQ</a>
+      </nav>
+
+      <!-- Header CTA -->
+      <a href="#referral-form" class="inline-flex items-center gap-2 bg-gradient-to-r from-gold-500 to-gold-400 hover:from-gold-400 hover:to-yellow-300 text-obsidian font-extrabold text-sm px-5 py-2.5 rounded-xl transition-all transform hover:scale-[1.02] shadow-lg shadow-gold-500/20">
+        <span>Claim $100</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="relative z-10">
+
+    <!-- 1. HERO SECTION -->
+    <section class="pt-12 pb-20 sm:pt-16 sm:pb-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto text-center">
+      <!-- Featured Centerpiece Official Crest Card -->
+      <div class="flex flex-col items-center justify-center mb-8 animate-float">
+        <div class="relative w-44 h-44 sm:w-52 sm:h-52 rounded-3xl bg-gradient-to-br from-gold-400 via-gold-500 to-amber-700 p-[3px] shadow-2xl gold-glow">
+          <div class="w-full h-full rounded-[21px] bg-white p-2.5 flex items-center justify-center overflow-hidden shadow-inner">
+            <img 
+              src="knalogo.jpg" 
+              alt="KNA Legacy & Co. Financial LLC — Building Brighter Tomorrows — Tax | Credit" 
+              class="kna-official-logo w-full h-full object-contain block"
+            />
+          </div>
+        </div>
+        <p class="mt-3 text-xs font-semibold uppercase tracking-[0.22em] text-gold-400">
+          Building Brighter Tomorrows • Tax | Credit
+        </p>
+      </div>
+
+      <!-- Top Pill Badge -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-charcoal border border-gold-500/30 text-xs sm:text-sm font-medium text-gold-400 mb-6">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+        <span>Official KNA Legacy & Co. Client Referral Program • Unlimited Payouts</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="font-display font-extrabold text-4xl sm:text-6xl lg:text-7xl tracking-tight text-white max-w-4xl mx-auto leading-[1.08]">
+        Refer a Friend. <br class="hidden sm:block" />
+        <span class="bg-gradient-to-r from-gold-400 via-amber-200 to-emerald-400 bg-clip-text text-transparent">Earn $100 Cash.</span>
+      </h1>
+
+      <!-- Subheadline -->
+      <p class="mt-6 text-base sm:text-xl text-zinc-300 max-w-2xl mx-auto leading-relaxed">
+        Know someone who needs expert <strong class="text-white font-semibold">Tax Preparation</strong> or <strong class="text-white font-semibold">Credit Services</strong> from <strong class="text-gold-400 font-semibold">KNA Legacy & Co. Financial LLC</strong>? Send them our way—when they complete their service, we send <span class="text-emerald-400 font-bold">$100 straight to your account</span>.
+      </p>
+
+      <!-- Hero CTA Buttons -->
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#referral-form" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-emerald-500 to-emerald-400 hover:from-emerald-400 hover:to-emerald-300 text-obsidian font-extrabold text-base sm:text-lg px-8 py-4 rounded-2xl transition-all transform hover:-translate-y-0.5 emerald-glow">
+          <span>Submit a Referral Now</span>
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+          </svg>
+        </a>
+        <a href="#calculator" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-charcoal hover:bg-slateDark border border-gold-500/30 text-white font-semibold text-base sm:text-lg px-8 py-4 rounded-2xl transition-all">
+          <span>Calculate Your Earnings</span>
+        </a>
+      </div>
+
+      <!-- Trust / Payout Method Strip -->
+      <div class="mt-14 pt-8 border-t border-white/10 max-w-3xl mx-auto">
+        <p class="text-xs uppercase tracking-widest text-zinc-400 font-semibold mb-4">Fast $100 Payouts Delivered Via Your Choice Of</p>
+        <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-5 text-sm font-semibold text-zinc-200">
+          <span class="px-4 py-2 rounded-xl bg-charcoal border border-white/10 flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-purple-400"></span> Zelle
+          </span>
+          <span class="px-4 py-2 rounded-xl bg-charcoal border border-white/10 flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span> Cash App
+          </span>
+          <span class="px-4 py-2 rounded-xl bg-charcoal border border-white/10 flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-sky-400"></span> Venmo
+          </span>
+          <span class="px-4 py-2 rounded-xl bg-charcoal border border-white/10 flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-gold-400"></span> Direct Deposit
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. HOW IT WORKS (3 SIMPLE STEPS) -->
+    <section id="how-it-works" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-gold-400 font-bold text-xs uppercase tracking-widest">Simple 3-Step Process</span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white mt-2">How You Get Paid</h2>
+        <p class="text-zinc-300 mt-3 text-base">Help friends level up their taxes and credit while earning $100 per completed client.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+        <!-- Step 1 -->
+        <div class="glass-card rounded-3xl p-8 relative overflow-hidden group hover:border-gold-500/50 transition-all">
+          <div class="flex items-center justify-between mb-6">
+            <div class="w-14 h-14 rounded-2xl bg-gold-500/15 border border-gold-500/30 flex items-center justify-center text-gold-400">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
+              </svg>
+            </div>
+            <span class="font-display font-extrabold text-5xl text-white/5 group-hover:text-gold-500/20 transition-colors">01</span>
+          </div>
+          <h3 class="font-display font-bold text-xl text-white mb-2">Submit Their Info</h3>
+          <p class="text-zinc-300 text-sm leading-relaxed">
+            Fill out the quick 2-step form below with your payout handle and your friend's contact details. This locks in your $100 referral credit immediately.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="glass-card rounded-3xl p-8 relative overflow-hidden group hover:border-emerald-500/50 transition-all">
+          <div class="flex items-center justify-between mb-6">
+            <div class="w-14 h-14 rounded-2xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+              </svg>
+            </div>
+            <span class="font-display font-extrabold text-5xl text-white/5 group-hover:text-emerald-500/20 transition-colors">02</span>
+          </div>
+          <h3 class="font-display font-bold text-xl text-white mb-2">Tax or Credit Service</h3>
+          <p class="text-zinc-300 text-sm leading-relaxed">
+            Our KNA Legacy & Co. specialists reach out to guide them through their Tax Preparation or Credit Consultation & Optimization plan.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="glass-card rounded-3xl p-8 relative overflow-hidden group hover:border-gold-500/50 transition-all">
+          <div class="flex items-center justify-between mb-6">
+            <div class="w-14 h-14 rounded-2xl bg-gold-500/15 border border-gold-500/30 flex items-center justify-center text-gold-400">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+            </div>
+            <span class="font-display font-extrabold text-5xl text-white/5 group-hover:text-gold-500/20 transition-colors">03</span>
+          </div>
+          <h3 class="font-display font-bold text-xl text-white mb-2">You Get Paid $100</h3>
+          <p class="text-zinc-300 text-sm leading-relaxed">
+            Once your referred friend completes their Tax Preparation or Credit Service, we send <strong class="text-emerald-400">$100 cash</strong> via Zelle, Cash App, Venmo, or Direct Deposit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. INTERACTIVE EARNINGS CALCULATOR (1 TO 25 REFERRALS) -->
+    <section id="calculator" class="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+      <div class="glass-card rounded-3xl p-8 sm:p-12 border border-gold-500/30 gold-glow relative overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <!-- Left Controls -->
+          <div class="lg:col-span-7">
+            <span class="inline-block px-3 py-1 rounded-lg bg-gold-500/15 text-gold-400 text-xs font-bold uppercase tracking-wider mb-3">
+              Unlimited Earning Potential
+            </span>
+            <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white">
+              Calculate Your $100 Referral Payouts
+            </h2>
+            <p class="text-zinc-300 text-sm sm:text-base mt-2">
+              Slide from 1 to 25 referrals to preview your instant cash earnings. There is no cap on how many clients you can refer.
+            </p>
+
+            <!-- Slider Component -->
+            <div class="mt-8 bg-obsidian/85 p-6 rounded-2xl border border-gold-500/20">
+              <div class="flex justify-between items-center mb-4">
+                <label for="referralSlider" class="text-sm font-medium text-zinc-200">Completed Referrals</label>
+                <span id="referralCountBadge" class="px-3.5 py-1 rounded-xl bg-gold-500/20 border border-gold-500/40 text-gold-400 font-display font-extrabold text-lg">
+                  5 Referrals
+                </span>
+              </div>
+              <input 
+                id="referralSlider" 
+                type="range" 
+                min="1" 
+                max="25" 
+                value="5" 
+                class="w-full"
+              />
+              <div class="flex justify-between text-xs text-zinc-400 font-medium mt-3">
+                <span>1 Referral ($100)</span>
+                <span>12 Referrals ($1,200)</span>
+                <span>25 Referrals ($2,500)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Payout Display -->
+          <div class="lg:col-span-5">
+            <div class="bg-gradient-to-br from-slateDark to-obsidian border border-gold-500/30 rounded-3xl p-8 text-center relative">
+              <p class="text-xs uppercase tracking-widest text-zinc-300 font-semibold">Your Total Cash Payout</p>
+              <div class="my-4 font-display font-extrabold text-5xl sm:text-6xl bg-gradient-to-r from-gold-400 via-amber-200 to-emerald-400 bg-clip-text text-transparent" id="earningsDisplay">
+                $500
+              </div>
+              <p id="payoutBreakdown" class="text-xs text-zinc-300 font-medium mb-2">
+                5 completed clients × $100 per referral
+              </p>
+              <p id="bonusNote" class="text-xs text-emerald-400 font-semibold mb-6">
+                Paid via Zelle, Cash App, Venmo, or Direct Deposit
+              </p>
+              <a href="#referral-form" class="block w-full py-3.5 px-6 rounded-xl bg-gradient-to-r from-gold-500 to-gold-400 hover:from-gold-400 hover:to-yellow-300 text-obsidian font-extrabold text-sm transition-all shadow-lg">
+                Lock In Your First $100 →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. TWO-STEP REFERRAL SUBMISSION FORM -->
+    <section id="referral-form" class="py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-gold-400 font-bold text-xs uppercase tracking-widest">Official Referral Registration</span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white mt-2">Submit Your Referral</h2>
+        <p class="text-zinc-300 mt-3 text-sm sm:text-base">
+          Complete both steps below so KNA Legacy & Co. Financial LLC can follow up with your friend and send your $100 payout once they complete their service.
+        </p>
+      </div>
+
+      <!-- Form Container -->
+      <div class="glass-card rounded-3xl p-6 sm:p-10 border border-gold-500/25 shadow-2xl">
+        
+        <!-- Active Two-Step Form View -->
+        <form id="knaReferralForm" class="space-y-8" novalidate>
+          
+          <!-- Step 1: Referrer Details -->
+          <div>
+            <div class="flex items-center gap-3 pb-4 border-b border-white/10 mb-6">
+              <span class="w-8 h-8 rounded-lg bg-gold-500/20 border border-gold-500/40 text-gold-400 font-display font-bold text-sm flex items-center justify-center">1</span>
+              <div>
+                <h3 class="font-display font-bold text-lg text-white">Step 1: Your Details (Where We Send Your $100)</h3>
+                <p class="text-xs text-zinc-400">Saved automatically on your device so submitting multiple referrals is effortless.</p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label for="referrerName" class="block text-xs font-semibold uppercase tracking-wider text-zinc-200 mb-2">Your Full Name *</label>
+                <input type="text" id="referrerName" required placeholder="e.g. Jordan Taylor"
+                  class="w-full px-4 py-3.5 rounded-xl bg-obsidian/90 border border-white/15 text-white placeholder-zinc-500 focus:outline-none focus:border-gold-400 focus:ring-1 focus:ring-gold-400 transition-all text-sm" />
+              </div>
+
+              <div>
+                <label for="referrerPhone" class="block text-xs font-semibold uppercase tracking-wider text-zinc-200 mb-2">Your Phone Number *</label>
+                <input type="tel" id="referrerPhone" required placeholder="(555) 234-5678"
+                  class="w-full px-4 py-3.5 rounded-xl bg-obsidian/90 border border-white/15 text-white placeholder-zinc-500 focus:outline-none focus:border-gold-400 focus:ring-1 focus:ring-gold-400 transition-all text-sm" />
+              </div>
+
+              <div>
+                <label for="referrerEmail" class="block text-xs font-semibold uppercase tracking-wider text-zinc-200 mb-2">Your Email Address *</label>
+                <input type="email" id="referrerEmail" required placeholder="you@example.com"
+                  class="w-full px-4 py-3.5 rounded-xl bg-obsidian/90 border border-white/15 text-white placeholder-zinc-500 focus:outline-none focus:border-gold-400 focus:ring-1 focus:ring-gold-400 transition-all text-sm" />
+              </div>
+
+              <div>
+                <label for="payoutMethod" class="block text-xs font-semibold uppercase tracking-wider text-zinc-200 mb-2">Preferred Payout Method *</label>
+                <select id="payoutMethod" required
+                  class="w-full px-4 py-3.5 rounded-xl bg-obsidian/90 border border-white/15 text-white focus:outline-none focus:border-gold-400 focus:ring-1 focus:ring-gold-400 transition-all text-sm">
+                  <option value="Zelle">Zelle</option>
+                  <option value="Cash App">Cash App</option>
+                  <option value="Venmo">Venmo</option>
+                  <option value="Direct Deposit">Direct Deposit</option>
+                </select>
+              </div>
+
+              <div class="sm:col-span-2">
+                <label for="payoutHandle" class="block text-xs font-semibold uppercase tracking-wider text-zinc-200 mb-2">Your Payout Handle / Tag / Zelle or Direct Deposit Info *</label>
+                <input type="text" id="payoutHandle" required placeholder="e.g. $YourCashTag, @VenmoHandle, Zelle Phone/Email, or Direct Deposit Details"
+                  class="w-full px-4 py-3.5 rounded-xl bg-obsidian/90 border border-white/15 text-white placeholder-zinc-500 focus:outline-none focus:border-gold-400 focus:ring-1 focus:ring-gold-400 transition-all text-sm" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Referred Friend's Details -->
+          <div>
+            <div class="flex items-center gap-3 pb-4 border-b border-white/10 mb-6">
+              <span class="w-8 h-8 rounded-lg bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 font-display font-bold text-sm flex items-center justify-center">2</span>
+              <div>
+                <h3 class="font-display font-bold text-lg text-white">Step 2: Referred Friend's Details</h3>
+                <p class="text-xs text-zinc-400">Let us know who to connect with and which Tax or Credit service they need.</p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label for="leadName" class="block text-xs font-semibold uppercase tracking-wider text-zinc-200 mb-2">Friend's Full Name *</label>
+                <input type="text" id="leadName" required placeholder="e.g. Alex Rivera"
+                  class="w-full px-4 py-3.5 rounded-xl bg-obsidian/90 border border-white/15 text-white placeholder-zinc-500 focus:outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400 transition-all text-sm" />
+              </div>
+
+              <div>
+                <label for="leadPhone" class="block text-xs font-semibold uppercase tracking-wider text-zinc-200 mb-2">Friend's Phone Number *</label>
+                <input type="tel" id="leadPhone" required placeholder="(555) 987-6543"
+                  class="w-full px-4 py-3.5 rounded-xl bg-obsidian/90 border border-white/15 text-white placeholder-zinc-500 focus:outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400 transition-all text-sm" />
+              </div>
+
+              <div>
+                <label for="leadEmail" class="block text-xs font-semibold uppercase tracking-wider text-zinc-200 mb-2">Friend's Email (Optional)</label>
+                <input type="email" id="leadEmail" placeholder="friend@example.com"
+                  class="w-full px-4 py-3.5 rounded-xl bg-obsidian/90 border border-white/15 text-white placeholder-zinc-500 focus:outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400 transition-all text-sm" />
+              </div>
+
+              <div>
+                <label for="serviceInterest" class="block text-xs font-semibold uppercase tracking-wider text-zinc-200 mb-2">Service Needed *</label>
+                <select id="serviceInterest"
+                  class="w-full px-4 py-3.5 rounded-xl bg-obsidian/90 border border-white/15 text-white focus:outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400 transition-all text-sm">
+                  <option value="Tax Preparation">Tax Preparation</option>
+                  <option value="Credit Repair & Optimization">Credit Repair & Optimization</option>
+                  <option value="Both (Tax Preparation & Credit Services)">Both (Tax Preparation & Credit Services)</option>
+                </select>
+              </div>
+
+              <div class="sm:col-span-2">
+                <label for="leadNotes" class="block text-xs font-semibold uppercase tracking-wider text-zinc-200 mb-2">Optional Notes</label>
+                <textarea id="leadNotes" rows="3" placeholder="Any helpful details? (e.g., 'They are ready to file their taxes this week' or 'Best time to reach them is afternoons')"
+                  class="w-full px-4 py-3.5 rounded-xl bg-obsidian/90 border border-white/15 text-white placeholder-zinc-500 focus:outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400 transition-all text-sm"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- Validation Alert Box (Hidden by default) -->
+          <div id="formErrorBox" class="hidden p-4 rounded-xl bg-red-500/15 border border-red-500/40 text-red-200 text-sm flex items-center gap-3">
+            <svg class="w-5 h-5 text-red-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+            </svg>
+            <span id="formErrorText">Please fill out all required fields marked with *.</span>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" id="submitReferralBtn" class="w-full py-4 px-8 rounded-2xl bg-gradient-to-r from-emerald-500 to-emerald-400 hover:from-emerald-400 hover:to-emerald-300 text-obsidian font-display font-extrabold text-base sm:text-lg transition-all transform hover:-translate-y-0.5 emerald-glow flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed">
+            <span id="submitBtnText">Lock In My $100 Referral</span>
+            <svg id="submitBtnIcon" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+            </svg>
+          </button>
+        </form>
+
+        <!-- Instant Confirmation Receipt View (Hidden until submission) -->
+        <div id="confirmationScreen" class="hidden text-center py-6 space-y-6">
+          <div class="w-20 h-20 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center mx-auto emerald-glow">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+            </svg>
+          </div>
+
+          <div>
+            <span class="inline-block px-3 py-1 rounded-full bg-gold-500/15 text-gold-400 text-xs font-bold uppercase tracking-wider mb-2">
+              Referral Registered & Dispatched
+            </span>
+            <h3 class="font-display font-extrabold text-2xl sm:text-3xl text-white">
+              You're Officially In Line for $100!
+            </h3>
+            <p class="text-zinc-300 text-sm sm:text-base max-w-lg mx-auto mt-2">
+              Thank you, <span id="confirmReferrerName" class="text-white font-semibold"></span>! We've logged <span id="confirmLeadName" class="text-emerald-400 font-semibold"></span> with <strong class="text-gold-400">KNA Legacy & Co. Financial LLC</strong>.
+            </p>
+          </div>
+
+          <!-- Email Dispatch Status Banner -->
+          <div id="emailStatusBanner" class="max-w-md mx-auto p-4 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-left flex items-start gap-3">
+            <svg class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+            <div class="text-xs leading-relaxed text-zinc-200">
+              <p class="font-bold text-white mb-0.5" id="emailStatusTitle">Email Sent to info@knalegacyco.com</p>
+              <p id="emailStatusDesc">Referral details were sent to <strong>info@knalegacyco.com</strong>, and an automated confirmation receipt was dispatched to <span id="confirmReferrerEmail" class="text-emerald-400 font-semibold"></span>.</p>
+            </div>
+          </div>
+
+          <!-- Tracking Ticket Card -->
+          <div class="max-w-md mx-auto bg-obsidian border border-gold-500/30 rounded-2xl p-5 text-left space-y-3">
+            <div class="flex items-center justify-between border-b border-white/10 pb-3">
+              <span class="text-xs text-zinc-400 uppercase tracking-wider">Tracking Ticket ID</span>
+              <div class="flex items-center gap-2">
+                <code id="trackingIdText" class="text-gold-400 font-mono font-bold text-sm">KNA-84920</code>
+                <button type="button" id="copyTrackingBtn" class="text-xs bg-white/10 hover:bg-white/20 text-white px-2.5 py-1 rounded-lg transition-colors">
+                  Copy
+                </button>
+              </div>
+            </div>
+            <div class="flex items-center justify-between text-sm">
+              <span class="text-zinc-400">Service Requested:</span>
+              <span id="confirmService" class="text-white font-semibold">Tax Preparation</span>
+            </div>
+            <div class="flex items-center justify-between text-sm">
+              <span class="text-zinc-400">Payout Method:</span>
+              <span id="confirmPayout" class="text-white font-semibold">Zelle</span>
+            </div>
+            <div class="flex items-center justify-between text-sm">
+              <span class="text-zinc-400">Reward Status:</span>
+              <span class="text-emerald-400 font-semibold">Pending Completed Service ($100)</span>
+            </div>
+          </div>
+
+          <div class="pt-4 flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3">
+            <button type="button" id="submitAnotherBtn" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-obsidian font-extrabold text-sm transition-all">
+              + Refer Another Friend
+            </button>
+            <a id="mailtoFallbackBtn" href="mailto:info@knalegacyco.com" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-charcoal hover:bg-slateDark border border-gold-500/30 text-gold-400 font-semibold text-sm transition-all inline-flex items-center justify-center gap-2">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+              </svg>
+              <span>Send via Email App</span>
+            </a>
+            <button type="button" id="shareLinkBtn" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-charcoal hover:bg-slateDark border border-white/15 text-white font-semibold text-sm transition-all">
+              Copy Program Link
+            </button>
+          </div>
+          <p id="copyFeedback" class="text-xs text-emerald-400 h-4"></p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. FAQ SECTION (ACCORDION TAILORED TO TAX & CREDIT REFERRALS) -->
+    <section id="faq" class="py-20 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="text-gold-400 font-bold text-xs uppercase tracking-widest">Program Details</span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white mt-2">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="space-y-4" id="faqAccordion">
+        <!-- FAQ Item 1 -->
+        <div class="glass-card rounded-2xl border border-gold-500/20 overflow-hidden">
+          <button type="button" class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none">
+            <span class="font-display font-bold text-base sm:text-lg text-white">When do I receive my $100 referral payout?</span>
+            <svg class="faq-icon w-5 h-5 text-gold-400 shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+          </button>
+          <div class="faq-content px-6 pb-5 text-zinc-300 text-sm sm:text-base leading-relaxed">
+            Your <strong class="text-emerald-400">$100 cash payout</strong> is issued immediately once your referred friend completes their Tax Preparation filing or Credit Consultation & Service with KNA Legacy & Co. Financial LLC. Funds are sent directly to your selected Zelle, Cash App, Venmo, or Direct Deposit account.
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="glass-card rounded-2xl border border-gold-500/20 overflow-hidden">
+          <button type="button" class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none">
+            <span class="font-display font-bold text-base sm:text-lg text-white">Is there any limit to how many friends I can refer?</span>
+            <svg class="faq-icon w-5 h-5 text-gold-400 shrink-0 transition-transform duration-200 -rotate-90" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-zinc-300 text-sm sm:text-base leading-relaxed">
+            <strong class="text-gold-400">Zero limits!</strong> You earn $100 for every single friend, family member, or coworker who completes a Tax or Credit service with us. Refer 5 people and earn $500; refer 25 people and earn $2,500.
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="glass-card rounded-2xl border border-gold-500/20 overflow-hidden">
+          <button type="button" class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none">
+            <span class="font-display font-bold text-base sm:text-lg text-white">How does KNA Legacy & Co. contact the person I refer?</span>
+            <svg class="faq-icon w-5 h-5 text-gold-400 shrink-0 transition-transform duration-200 -rotate-90" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-zinc-300 text-sm sm:text-base leading-relaxed">
+            Once you submit the form, our team at <strong class="text-white">info@knalegacyco.com</strong> receives your referral ticket immediately and reaches out to your friend via phone or text for a friendly, no-pressure Tax or Credit consultation—letting them know you connected them with us.
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 6. FOOTER -->
+  <footer class="border-t border-gold-500/20 bg-charcoal/90 py-12 px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3.5">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-gold-400 to-amber-700 p-[1.5px] overflow-hidden shrink-0">
+          <div class="w-full h-full rounded-[10px] bg-white overflow-hidden flex items-center justify-center">
+            <img 
+              src="knalogo.jpg" 
+              alt="KNA Legacy & Co. Financial LLC Official Logo" 
+              class="kna-official-logo w-full h-full object-contain p-0.5 block"
+            />
+          </div>
+        </div>
+        <div>
+          <span class="font-display font-bold text-base text-white block">KNA <span class="text-gold-500">LEGACY & CO.</span> FINANCIAL LLC</span>
+          <span class="text-zinc-400 text-xs">Building Brighter Tomorrows • Tax | Credit • © <span id="currentYear"></span></span>
+        </div>
+      </div>
+
+      <!-- Subtle Credit Badge -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-obsidian/80 border border-gold-500/25 text-xs text-zinc-300">
+        <span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
+        <span>Designed by <strong class="text-white font-semibold">@Soupdesignedit</strong></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Set current year in footer
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+      // Load saved referrer profile from localStorage for repeat referrals
+      const STORAGE_KEY = 'kna_legacy_co_referrer_profile';
+      try {
+        const savedProfile = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
+        if (savedProfile) {
+          if (savedProfile.name) document.getElementById('referrerName').value = savedProfile.name;
+          if (savedProfile.phone) document.getElementById('referrerPhone').value = savedProfile.phone;
+          if (savedProfile.email) document.getElementById('referrerEmail').value = savedProfile.email;
+          if (savedProfile.payoutMethod) document.getElementById('payoutMethod').value = savedProfile.payoutMethod;
+          if (savedProfile.payoutHandle) document.getElementById('payoutHandle').value = savedProfile.payoutHandle;
+        }
+      } catch (err) {
+        console.warn('Could not read saved referrer profile:', err);
+      }
+
+      // 1. Earnings Calculator Logic (1 to 25 Referrals = $100 to $2,500)
+      const slider = document.getElementById('referralSlider');
+      const countBadge = document.getElementById('referralCountBadge');
+      const earningsDisplay = document.getElementById('earningsDisplay');
+      const payoutBreakdown = document.getElementById('payoutBreakdown');
+      const bonusNote = document.getElementById('bonusNote');
+
+      function updateCalculator() {
+        const count = parseInt(slider.value, 10);
+        const total = count * 100;
+        
+        countBadge.textContent = count === 1 ? '1 Referral' : `${count} Referrals`;
+        earningsDisplay.textContent = `$${total.toLocaleString()}`;
+        payoutBreakdown.textContent = count === 1 
+          ? '1 completed client × $100 per referral' 
+          : `${count} completed clients × $100 per referral`;
+
+        if (count >= 10) {
+          bonusNote.textContent = `VIP Partner Pace! $${total.toLocaleString()} straight to your account.`;
+          bonusNote.className = 'text-xs text-gold-400 font-semibold mb-6';
+        } else {
+          bonusNote.textContent = 'Paid via Zelle, Cash App, Venmo, or Direct Deposit';
+          bonusNote.className = 'text-xs text-emerald-400 font-semibold mb-6';
+        }
+      }
+
+      slider.addEventListener('input', updateCalculator);
+      updateCalculator();
+
+      // 2. Two-Step Referral Form Submission, Email Dispatch & Validation
+      const form = document.getElementById('knaReferralForm');
+      const errorBox = document.getElementById('formErrorBox');
+      const errorText = document.getElementById('formErrorText');
+      const confirmationScreen = document.getElementById('confirmationScreen');
+      const submitBtn = document.getElementById('submitReferralBtn');
+      const submitBtnText = document.getElementById('submitBtnText');
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const referrerName = document.getElementById('referrerName').value.trim();
+        const referrerPhone = document.getElementById('referrerPhone').value.trim();
+        const referrerEmail = document.getElementById('referrerEmail').value.trim();
+        const payoutMethod = document.getElementById('payoutMethod').value;
+        const payoutHandle = document.getElementById('payoutHandle').value.trim();
+        const leadName = document.getElementById('leadName').value.trim();
+        const leadPhone = document.getElementById('leadPhone').value.trim();
+        const leadEmail = document.getElementById('leadEmail').value.trim();
+        const serviceInterest = document.getElementById('serviceInterest').value;
+        const leadNotes = document.getElementById('leadNotes').value.trim();
+
+        // Validate required fields
+        if (!referrerName || !referrerPhone || !referrerEmail || !payoutHandle || !leadName || !leadPhone) {
+          errorText.textContent = 'Please complete all required fields (*) in Step 1 and Step 2 so we can register your referral and send your $100.';
+          errorBox.classList.remove('hidden');
+          return;
+        }
+
+        // Hide error if valid
+        errorBox.classList.add('hidden');
+
+        // Persist referrer details in localStorage for future submissions
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify({
+            name: referrerName,
+            phone: referrerPhone,
+            email: referrerEmail,
+            payoutMethod,
+            payoutHandle
+          }));
+        } catch (err) {
+          console.warn('Could not save referrer profile:', err);
+        }
+
+        // Generate unique KNA tracking ID
+        const randomNum = Math.floor(10000 + Math.random() * 90000);
+        const trackingId = `KNA-${randomNum}`;
+
+        // Set loading state
+        submitBtn.disabled = true;
+        submitBtnText.textContent = 'Sending to KNA Legacy & Co...';
+
+        // Build mailto fallback link with full details
+        const mailSubject = encodeURIComponent(`New $100 Referral Submission — KNA Legacy & Co. Financial LLC [${trackingId}]`);
+        const mailBody = encodeURIComponent(
+          `KNA LEGACY & CO. FINANCIAL LLC — $100 REFERRAL SUBMISSION\n` +
+          `Tracking Ticket ID: ${trackingId}\n\n` +
+          `--- STEP 1: REFERRER (PAYOUT RECIPIENT) ---\n` +
+          `Full Name: ${referrerName}\n` +
+          `Phone: ${referrerPhone}\n` +
+          `Email: ${referrerEmail}\n` +
+          `Payout Method: ${payoutMethod}\n` +
+          `Payout Handle/Tag: ${payoutHandle}\n\n` +
+          `--- STEP 2: REFERRED FRIEND ---\n` +
+          `Friend's Name: ${leadName}\n` +
+          `Friend's Phone: ${leadPhone}\n` +
+          `Friend's Email: ${leadEmail || 'Not provided'}\n` +
+          `Service Needed: ${serviceInterest}\n` +
+          `Notes: ${leadNotes || 'None'}`
+        );
+        document.getElementById('mailtoFallbackBtn').href = `mailto:info@knalegacyco.com?subject=${mailSubject}&body=${mailBody}`;
+
+        // Dispatch email notification to info@knalegacyco.com + autoresponse to referrer via FormSubmit AJAX
+        const emailStatusTitle = document.getElementById('emailStatusTitle');
+        const emailStatusDesc = document.getElementById('emailStatusDesc');
+
+        try {
+          const response = await fetch('https://formsubmit.co/ajax/info@knalegacyco.com', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+              _subject: 'New $100 Referral Submission — KNA Legacy & Co. Financial LLC',
+              _template: 'table',
+              _captcha: 'false',
+              _replyto: referrerEmail,
+              _autoresponse: `Hi ${referrerName}, thank you for referring ${leadName} (${serviceInterest}) to KNA Legacy & Co. Financial LLC! Your Tracking Ticket ID is ${trackingId}. Once ${leadName} completes their service, we will send your $100 cash payout via ${payoutMethod} (${payoutHandle}). — KNA Legacy & Co. Financial LLC (info@knalegacyco.com)`,
+              Tracking_Ticket_ID: trackingId,
+              Referrer_Name: referrerName,
+              Referrer_Phone: referrerPhone,
+              Referrer_Email: referrerEmail,
+              Payout_Method: payoutMethod,
+              Payout_Handle: payoutHandle,
+              Referred_Friend_Name: leadName,
+              Referred_Friend_Phone: leadPhone,
+              Referred_Friend_Email: leadEmail || 'Not provided',
+              Service_Needed: serviceInterest,
+              Optional_Notes: leadNotes || 'None'
+            })
+          });
+
+          if (!response.ok) throw new Error('Network response was not ok');
+
+          emailStatusTitle.textContent = 'Confirmation Sent to info@knalegacyco.com';
+          emailStatusDesc.innerHTML = `Your referral details were delivered to <strong>info@knalegacyco.com</strong>, and an automated confirmation receipt was sent to <span class="text-emerald-400 font-semibold">${referrerEmail}</span>.`;
+        } catch (err) {
+          console.warn('AJAX email dispatch fallback triggered:', err);
+          emailStatusTitle.textContent = 'Referral Logged — Tap "Send via Email App" to Confirm';
+          emailStatusDesc.innerHTML = `Your ticket <strong>${trackingId}</strong> is registered. Tap <strong>Send via Email App</strong> below to send directly to <strong>info@knalegacyco.com</strong> from your mail client.`;
+        } finally {
+          submitBtn.disabled = false;
+          submitBtnText.textContent = 'Lock In My $100 Referral';
+        }
+
+        // Populate confirmation details
+        document.getElementById('confirmReferrerName').textContent = referrerName;
+        document.getElementById('confirmLeadName').textContent = leadName;
+        document.getElementById('confirmReferrerEmail').textContent = referrerEmail;
+        document.getElementById('trackingIdText').textContent = trackingId;
+        document.getElementById('confirmService').textContent = serviceInterest;
+        document.getElementById('confirmPayout').textContent = `${payoutMethod} (${payoutHandle})`;
+
+        // Toggle views smoothly
+        form.classList.add('hidden');
+        confirmationScreen.classList.remove('hidden');
+        confirmationScreen.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+
+      // Reset form to refer another friend (keeps Step 1 referrer details saved)
+      document.getElementById('submitAnotherBtn').addEventListener('click', () => {
+        document.getElementById('leadName').value = '';
+        document.getElementById('leadPhone').value = '';
+        document.getElementById('leadEmail').value = '';
+        document.getElementById('leadNotes').value = '';
+        document.getElementById('copyFeedback').textContent = '';
+
+        confirmationScreen.classList.add('hidden');
+        form.classList.remove('hidden');
+      });
+
+      // Clipboard helper (iFrame safe)
+      function copyToClipboard(text, message) {
+        const tempInput = document.createElement('input');
+        tempInput.value = text;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        try {
+          document.execCommand('copy');
+          const feedback = document.getElementById('copyFeedback');
+          feedback.textContent = message;
+          setTimeout(() => { feedback.textContent = ''; }, 3000);
+        } catch (err) {
+          console.error('Copy failed', err);
+        }
+        document.body.removeChild(tempInput);
+      }
+
+      document.getElementById('copyTrackingBtn').addEventListener('click', () => {
+        const id = document.getElementById('trackingIdText').textContent;
+        copyToClipboard(id, `Tracking Ticket ID ${id} copied to clipboard!`);
+      });
+
+      document.getElementById('shareLinkBtn').addEventListener('click', () => {
+        copyToClipboard(window.location.href, 'Referral page link copied! Share it with friends.');
+      });
+
+      // 3. FAQ Accordion Toggle
+      const faqToggles = document.querySelectorAll('.faq-toggle');
+      faqToggles.forEach((toggle) => {
+        toggle.addEventListener('click', () => {
+          const content = toggle.nextElementSibling;
+          const icon = toggle.querySelector('.faq-icon');
+          const isHidden = content.classList.contains('hidden');
+
+          // Close all others
+          document.querySelectorAll('.faq-content').forEach((el) => el.classList.add('hidden'));
+          document.querySelectorAll('.faq-icon').forEach((ic) => ic.classList.add('-rotate-90'));
+
+          if (isHidden) {
+            content.classList.remove('hidden');
+            icon.classList.remove('-rotate-90');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
