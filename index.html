@@ -761,13 +761,13 @@
         const emailStatusTitle = document.getElementById('emailStatusTitle');
         const emailStatusDesc = document.getElementById('emailStatusDesc');
 
-        try {
+      try {
           const response = await fetch('https://formsubmit.co/ajax/info@knalegacyco.com', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
               'Accept': 'application/json'
-            },
+            
             body: JSON.stringify({
               _subject: 'New $100 Referral Submission — KNA Legacy & Co. Financial LLC',
               _template: 'table',
