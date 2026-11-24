@@ -370,7 +370,13 @@
       <div class="glass-card rounded-3xl p-6 sm:p-10 border border-gold-500/25 shadow-2xl">
         
         <!-- Active Two-Step Form View -->
-        <form id="knaReferralForm" class="space-y-8" novalidate>
+       <form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="2740b7ff-c848-476e-8355-e5feac055401">
+  <input type="text" name="name" required>
+  <input type="email" name="email" required>
+  <textarea name="message" required></textarea>
+  <button type="submit">Submit</button>
+</form>
           
           <!-- Step 1: Referrer Details -->
           <div>
